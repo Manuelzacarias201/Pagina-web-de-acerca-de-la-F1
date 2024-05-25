@@ -1,0 +1,141 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #e10600;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffcccc;
+}
+
+.auth {
+    display: flex;
+}
+
+.auth button {
+    background-color: white;
+    color: #e10600;
+    border: 1px solid #e10600;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.auth button:hover {
+    background-color: #e10600;
+    color: white;
+}
+
+.drivers-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.driver-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.driver-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.position {
+    background-color: #d32f2f;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom-right-radius: 8px;
+}
+
+.points {
+    background-color: #333;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom-left-radius: 8px;
+}
+
+.details {
+    padding: 20px;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.name img {
+    width: 24px;
+    height: auto;
+}
+
+.team {
+    color: #777;
+    margin-top: 10px;
+}
+
+.driver-image {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
